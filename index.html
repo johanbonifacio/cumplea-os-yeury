@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Feliz Cumpleaños! 🎂</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="birthday-header text-center py-5">
+    <div class="balloons">
+      <div class="balloon red"></div>
+      <div class="balloon yellow"></div>
+      <div class="balloon blue"></div>
+      <div class="balloon green"></div>
+    </div>
+    <h1 class="display-3 text-light">🎉 ¡Feliz Cumpleaños Yeuris! 🎉</h1>
+    <p class="lead text-light">Que este día esté lleno de alegrías y te vaya de maravilla. 🥳</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container text-center">
+    <!-- Música de fondo -->
+    <div class="music-controls my-4">
+      <audio id="birthdayMusic" loop>
+        <source src="files/cumple.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento <code>audio</code>.
+      </audio>
+      <button id="musicToggle" class="btn btn-info">▶️ Reproducir Canción de Cumpleaños</button>
+    </div>
+
+    <!-- Carta de Cumple -->
+    <div class="card mx-auto my-4 shadow-lg" style="max-width: 650px;">
+      <div class="card-body">
+        <h2 class="card-title text-pink">¡Hoy es tu día especial! 🎂</h2>
+        <p class="card-text text-muted">
+          ¡Que tengas el mejor de los días!. 🎁
+        </p>
+        <!-- Botón de confeti -->
+        <button class="btn btn-primary btn-lg mt-4" id="confettiButton">¡Confeti! 🎊</button>
+      </div>
+    </div>
+
+    <!-- Mensaje especial -->
+    <section class="special-message my-5">
+        <h3 class="text-warning">✨ Un mensaje especial para ti:</h3>
+        <blockquote class="blockquote text-center mt-3">
+          <p class="mb-0 fst-italic">
+            Con el paso de los años te has convertido en una persona muy importante en mi vida, ya no te considero como un mejor amigo, eres parte de mi! Y como en Grey's eres mi persona! Agradezco al universo de haberte conocido y me gustaría coincidir contigo en otras vidas! Gracias por tanto.
+Te quiero mandar todas las bendiciones y los mejores deseos que tanto te mereces, que en este día celebres tu cumple como te lo mereces, que cumplas muchísimos años más!! Deseo con el alma que logres todas tus metas, eres grande, te admiro, te quiero y deseo lo mejor para tí! No podría pedir un mejor besto frendo que tú o el universo me castiga jajaja. Felices 30 Yei Yei el avioncito ❤️ ily
+          </p>
+          <footer class="blockquote-footer mt-3">Con cariño, tu mejor amiga Yelenna :3 ❤️</footer>
+        </blockquote>
+      </section>
+    </main>
+    
+  <!-- Pie de página -->
+  <footer class="text-center py-4 text-light">
+    <p>🎁 Con mucho amor, Lenna. ❤️</p>
+  </footer>
+
+  <!-- Contenedor del confetti -->
+  <div id="confetti-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

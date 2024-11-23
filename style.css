@@ -1,0 +1,153 @@
+body {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  overflow-x: hidden;
+}
+
+.birthday-header {
+  background: #ff6f61; 
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.birthday-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: #fff; 
+}
+
+.birthday-header .balloons {
+  position: absolute;
+  width: 100%;
+  top: 20px; 
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+/* LO GLOBO*/
+.balloon {
+  width: 50px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0.1));
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+.balloon::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: #000;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* COLORE DE LO GLOBO */
+.balloon.red {
+  background-color: #ff6f61;
+}
+
+.balloon.yellow {
+  background-color: #ffeb3b; 
+  animation-delay: 0.5s;
+}
+
+.balloon.blue {
+  background-color: #42a5f5; 
+  animation-delay: 1s;
+}
+
+.balloon.green {
+  background-color: #66bb6a; 
+  animation-delay: 1.5s;
+}
+
+/* Animaciones */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #ff4081;
+  font-size: 2rem;
+}
+
+/* Footer */
+footer {
+  background: #ff6f61; 
+  color: white;
+}
+
+/* mensaje especial */
+.special-message {
+  background: #fff8dc; 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.special-message h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.special-message blockquote {
+  font-size: 1.2rem;
+  color: #555; 
+}
+
+.special-message blockquote footer {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Confetti */
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: #ff4081; 
+  opacity: 0.9;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+
+  
